@@ -1,9 +1,7 @@
 # syntax=docker/dockerfile:1
 FROM ocaml/opam:ubuntu-18.04-ocaml-4.14
 
-USER 1000:1000
 WORKDIR /home/cameleer_with_docker/cameleer
-
 
 #for opam switch
 RUN sudo apt-get update && \

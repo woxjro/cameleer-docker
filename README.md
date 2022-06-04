@@ -5,7 +5,11 @@
 
 
 ### 2. docker-compose
-`docker-compose up --detach`
+```
+export USER_ID=$(id -u) && \
+export GROUP_ID=$(id -g) && \
+docker-compose up -d
+```
 
 
 ### 3. コンテナに入る

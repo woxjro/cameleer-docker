@@ -36,3 +36,9 @@ UID=${UID} GID=${GID} docker-compose up
 docker-compose up --detach --force-recreate
 
 docker exec -it cameleer bash
+
+export USER_ID=$(id -u) && \
+export GROUP_ID=$(id -g) && \
+docker-compose up -d
+
+
