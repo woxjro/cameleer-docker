@@ -37,3 +37,6 @@ eval $(opam env)
 `/home/cameleer_with_docker/cameleer`にいることを確認した上で,
 `cameleer smartcontracts/boomerang.ml`をして, GUIが立ち上がる事を確認.
 
+
+![Screenshot from 2022-06-05 17-13-31](https://user-images.githubusercontent.com/63214188/172041775-7830e040-4acd-43f7-89e2-b75c798c4985.png)
+
