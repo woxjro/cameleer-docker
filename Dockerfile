@@ -15,12 +15,15 @@ RUN sudo apt-get update && \
 		sudo apt-get install -y libgtk2.0-dev && \
 		sudo apt-get install -y libgtksourceview2.0-dev
 
+CMD ["/bin/bash"]
 
 #RUN opam init && \
-#		eval $(opam env)
-#RUN opam switch create . ocaml-base-compiler.4.14.0 && \
-#		eval $(opam env)
-#RUN opam install alt-ergo altgr-ergo
-#RUN opam install z3
-#RUN opam install why3-coq
-#RUN	why3 config detect
+#		eval $(opam env) && \
+#		opam switch create . ocaml-base-compiler.4.14.0 && \
+#		eval $(opam env) && \
+#		opam install alt-ergo altgr-ergo && \
+#		opam install z3 && \
+#		eval $(opam env) && \
+#		opam install why3-coq && \
+#		eval $(opam env) && \
+#		why3 config detect
